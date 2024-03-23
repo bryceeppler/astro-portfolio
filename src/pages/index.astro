@@ -1,95 +1,99 @@
 ---
-import Layout from '../components/Layout.astro';
+import Layout from "../components/Layout.astro";
 ---
 
 <Layout title="Bryce Eppler">
-	<main class="flex min-h-screen flex-col items-center justify-between p-2 sm:p-8 mb-16">
-    <div class="w-full max-w-xl flex-1 flex-col justify-center text-center">      <div class="header">
-      <section class="w-full py-6 md:py-12">
-        <div class="container grid px-4 md:px-6 items-start my-10">
+  <main class="flex min-h-screen flex-col items-center justify-between">
+    <div class="w-full max-w-2xl flex-1 flex-col justify-center">
+      <div class="">
+        <section class="w-full py-6 md:py-12 mb-16">
+          <div class="container items-start my-10 bg-sky-200 p-8 rounded">
             <h2 class="text-3xl font-bold tracking-tighter">Bryce Eppler</h2>
-            <p class="text-2xl font-bold text-gray-500 dark:text-purple-800">Software Developer</p>
-            <p>epplerdev@gmail.com</p>
-        </div>
-        <div class="grid space-y-10 md:gap-4">
-          <!-- Projects -->
-          <div class="">
-            <h2 class="text-2xl font-bold tracking-tighter">
-              Projects
-            </h2>
-            <ul>
-              <li>
-                <div class="relative flex py-5 items-center">
-                  <div class="flex-grow border-t border-gray-800"></div>
-                  <span class="flex-shrink mx-4 text-gray-800 text-xl">snapcaster.ca</span>
-                  <div class="flex-grow border-t border-gray-800"></div>
-                </div>
-                <p>2022 - 2024</p>
-                <p class="mt-4">Snapcaster is a microservices web application that allows users to search custom Magic: The Gathering cards across multiple Canadian stores. It has been running since 2022 and serves thousands of active monthly users.</p>
-                <h3
-                  class="mt-4 mb-2"
-                >Technologies</h5>
-                <p>Node, React, MongoDB, Docker, AWS, Python</p>
-                <div
-                  class="mt-4"
-                >
-                  <button
-                    class="bg-gray-800 text-white px-4 py-2 rounded-md"
-                  >
-                    <a href="https://github.com/bryceeppler/snapcaster-client/" target="_blank">View on GitHub</a>
-                  </button>
-                  <button
-                    class="bg-gray-800 text-white px-4 py-2 rounded-md"
-                  >
-                    <a href="https://snapcaster.ca/" target="_blank">View Live</a>
-                  </button>
-                </div>
-              </li>
-            </ul>
+            <p class="text-2xl font-bold text-gray-500 dark:text-white">
+              Software Developer
+            </p>
+            <!-- <p>epplerdev@gmail.com</p> -->
+            <p class="font-bold">
+              <a href="
+                mailto:epplerdev@gmail.com"
+                class="hover:text-rose-400"
+                >epplerdev@gmail.com</a>
+            </p>
           </div>
-          <!-- Experience -->
           <div class="">
-            <h2 class="text-2xl font-bold tracking-tighter">
-              Experience
-            </h2>
-            <ul>
-              <li>
-               <div class="relative flex py-5 items-center">
-                  <div class="flex-grow border-t border-gray-800"></div>
-                  <span class="flex-shrink mx-4 text-gray-800 text-xl">BSc Computer Science</span>
-                  <div class="flex-grow border-t border-gray-800"></div>
-                </div>
-                <p class="text-lg">University of Victoria</p>
-                <div class="p-1"/>
-                <p>May 2019 - April 2024</p>
-
-              </li>
-              <li>
-                <div class="relative flex py-5 items-center">
-                  <div class="flex-grow border-t border-gray-800"></div>
-                  <span class="flex-shrink mx-4 text-gray-800 text-xl">Software Developer & QA Engineer</span>
-                  <div class="flex-grow border-t border-gray-800"></div>
-                </div>
-                <p class="text-lg">Ergonomyx</p>
-                <div class="p-1"/>
-                <p>May 2022 - May 2023</p>
-              </li>
-              <li>
-                <div class="relative flex py-5 items-center">
-                  <div class="flex-grow border-t border-gray-800"></div>
-                  <span class="flex-shrink mx-4 text-gray-800 text-xl">Fullstack Developer</span>
-                  <div class="flex-grow border-t border-gray-800"></div>
-                </div>
-                <p class="text-lg">Freelance Development</p>
-                <div class="p-1"/>
-                <p>February 2023 - September 2023</p>
-              </li>
-            </ul>
+            <!-- Projects -->
+            <div class="">
+              <h2 class="text-3xl font-bold tracking-tighter">Projects</h2>
+              <div class="p-2"></div>
+              <ul>
+                <li class="text-left">
+                  <p class="text-2xl font-bold"><a class=" hover:text-rose-400" href="https://snapcaster.ca/" target="_blank"
+                    >snapcaster.ca</a
+                  ></p>
+                  <div class="p-1"></div>
+                  <p class="font-bold">Owner</p>
+                  <p>2021 - 2024</p>
+                  <div class="p-1"></div>
+                  <p>
+                    Snapcaster, launched in 2022, is a SaaS platform offering a
+                    microservices web application alongside a robust web
+                    scraping infrastructure, designed specifically for Magic:
+                    The Gathering enthusiasts. It enables users to efficiently
+                    search for collectible cards across various Canadian
+                    retailers. Originating as an open-source project, Snapcaster
+                    rapidly evolved into a vibrant community-driven project, now
+                    boasting thousands of active users monthly, including a
+                    steadily increasing base of paid subscribers.
+                  </p>
+                  <div class="p-2"></div>
+                  <h3 class="font-semibold">Technologies</h3>
+                  <p>Node, React, MongoDB, Docker, AWS, Python</p>
+                  <div class="mt-4">
+                    <button class="bg-gray-800 hover:bg-rose-500 text-white px-4 py-2 rounded-md">
+                      <a
+                        href="https://github.com/bryceeppler/snapcaster-client/"
+                        target="_blank">GitHub</a
+                      >
+                    </button>
+                    <button class="bg-gray-800 hover:bg-rose-500 text-white px-4 py-2 rounded-md">
+                      <a href="https://snapcaster.ca/" target="_blank"
+                        >snapcaster.ca</a
+                      >
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="p-8"></div>
+            <!-- Experience -->
+            <div class="">
+              <h2 class="text-3xl font-bold tracking-tighter">Experience</h2>
+              <div class="p-2"></div>
+              <ul>
+                <li class="text-left">
+                  <p class="font-bold text-xl">BSc Computer Science</p>
+                  <p class="">University of Victoria</p>
+                  <p>May 2019 - April 2024</p>
+                </li>
+                <div class="p-2"></div>
+                <li class="text-left">
+                  <p class="font-bold text-xl">
+                    Fullstack Developer & QA Engineer
+                  </p>
+                  <p>Ergonomyx</p>
+                  <p>May 2022 - May 2023</p>
+                </li>
+                <div class="p-2"></div>
+                <li class="text-left">
+                  <p class="font-bold text-xl">Fullstack Developer</p>
+                  <p>Dr Hoe Civil Construction</p>
+                  <p>Feb 2023 - September 2023</p>
+                </li>
+              </ul>
+            </div>
           </div>
-
-        </div>
         </section>
       </div>
     </div>
-	</main>
+  </main>
 </Layout>
